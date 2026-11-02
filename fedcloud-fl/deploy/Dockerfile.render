@@ -1,0 +1,11 @@
+# Render.com web service: the FedAsync server + dashboard (deploy/hf_space/app.py) on Render's $PORT.
+# Built from the fedcloud-fl/ folder by render.yaml at the repository root.
+FROM python:3.12-slim
+WORKDIR /app
+COPY deploy/hf_space/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY fedcloud/ fedcloud/
+COPY deploy/hf_space/app.py .
+COPY data/parts_dir0.5/server_test.npz .
+ENV PYTHONUNBUFFERED=1 ROUNDS=30 CLIENTS=5 PLATFORM="Render (free web service)"
+CMD ["python", "app.py"]

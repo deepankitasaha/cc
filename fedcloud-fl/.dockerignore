@@ -3,3 +3,4 @@ results/
 paper/
 *.zip
 __pycache__/
+!data/parts_dir0.5/server_test.npz

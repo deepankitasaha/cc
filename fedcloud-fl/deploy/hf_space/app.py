@@ -27,6 +27,7 @@ from fedcloud.data import load_npz
 CFG = Namespace(rounds=int(os.environ.get("ROUNDS", 30)), clients=int(os.environ.get("CLIENTS", 5)),
                 alpha=0.4, staleness_a=0.5, epochs=1, lr=1e-3, seed=0, tag="hf-space")
 PORT = int(os.environ.get("PORT", 7860))
+PLATFORM = os.environ.get("PLATFORM", "Hugging Face Spaces")
 TEST = load_npz(os.environ.get("TEST", "server_test.npz"))
 RUNS: list[dict] = []
 
@@ -101,7 +102,7 @@ td,th{{text-align:right;padding:4px 8px;border-bottom:1px solid #eef0f4}} th{{co
 .wrap{{overflow-x:auto}} code{{background:#f2f4f7;padding:1px 5px;border-radius:4px}}
 </style></head><body>
 <h1>FedCloud aggregation server (FedAsync)</h1>
-<div class="sub">Hosted on Hugging Face Spaces (Docker container, public HTTPS endpoint). Clients on Colab / Kaggle
+<div class="sub">Hosted on {PLATFORM} (Docker container, public HTTPS endpoint). Clients on Colab / Kaggle
 push model updates only — raw transactions never reach this server.</div>
 <div class="bar"><div style="width:{pct:.1f}%"></div></div>
 <div class="kpis">

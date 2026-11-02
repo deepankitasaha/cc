@@ -1,0 +1,9 @@
+# Render Blueprint: render.com -> New -> Blueprint -> pick this repo -> Apply.
+services:
+  - type: web
+    name: fedcloud-server
+    runtime: docker
+    plan: free
+    dockerContext: ./fedcloud-fl
+    dockerfilePath: ./fedcloud-fl/deploy/Dockerfile.render
+    healthCheckPath: /health
