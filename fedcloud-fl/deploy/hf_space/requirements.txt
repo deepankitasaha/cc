@@ -1,0 +1,4 @@
+# The async server needs no Flower; this keeps the Space image small.
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3

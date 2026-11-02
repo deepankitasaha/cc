@@ -1,0 +1,11 @@
+{
+  "_comment": "Per-client network/compute profiles used by the WAN emulator (fedcloud/netemu.py). rtt_ms = round-trip latency, bw_mbps = link bandwidth, compute_factor = slowdown vs. base_compute_s per local epoch. Profiles approximate free-tier nodes in different regions/providers. Set FEDCLOUD_NO_EMU=1 on real cloud nodes to disable emulation and measure the real network.",
+  "base_compute_s": 0.5,
+  "clients": [
+    {"name": "node-A (Kaggle, us-central)",   "rtt_ms": 40,  "bw_mbps": 50, "compute_factor": 1.0},
+    {"name": "node-B (Colab, us-east)",       "rtt_ms": 90,  "bw_mbps": 25, "compute_factor": 1.0},
+    {"name": "node-C (Colab, europe-west)",   "rtt_ms": 150, "bw_mbps": 10, "compute_factor": 1.5},
+    {"name": "node-D (Kaggle, asia-south)",   "rtt_ms": 220, "bw_mbps": 5,  "compute_factor": 2.0},
+    {"name": "node-E (shared VM, straggler)", "rtt_ms": 300, "bw_mbps": 2,  "compute_factor": 4.0}
+  ]
+}

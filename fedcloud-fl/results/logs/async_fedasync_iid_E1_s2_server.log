@@ -1,0 +1,35 @@
+[async-server] listening on 127.0.0.1:18924; budget=150 updates
+[async-server] upd    0 (~round   0)  t=    0.2s  MB=  0.000  AUPRC=0.0329  F1=0.0047
+[async-server] upd    5 (~round   1)  t=    1.5s  MB=  0.241  AUPRC=0.6597  F1=0.7614
+[async-server] upd   10 (~round   2)  t=    2.5s  MB=  0.413  AUPRC=0.6669  F1=0.7876
+[async-server] upd   15 (~round   3)  t=    3.2s  MB=  0.585  AUPRC=0.6849  F1=0.7857
+[async-server] upd   20 (~round   4)  t=    4.2s  MB=  0.757  AUPRC=0.7134  F1=0.7429
+[async-server] upd   25 (~round   5)  t=    5.2s  MB=  0.929  AUPRC=0.7221  F1=0.7393
+[async-server] upd   30 (~round   6)  t=    5.9s  MB=  1.101  AUPRC=0.7344  F1=0.7440
+[async-server] upd   35 (~round   7)  t=    6.9s  MB=  1.273  AUPRC=0.7470  F1=0.7442
+[async-server] upd   40 (~round   8)  t=    7.7s  MB=  1.445  AUPRC=0.7584  F1=0.7105
+[async-server] upd   45 (~round   9)  t=    8.8s  MB=  1.618  AUPRC=0.7692  F1=0.6722
+[async-server] upd   50 (~round  10)  t=    9.5s  MB=  1.790  AUPRC=0.7863  F1=0.7105
+[async-server] upd   55 (~round  11)  t=   10.5s  MB=  1.962  AUPRC=0.7940  F1=0.7080
+[async-server] upd   60 (~round  12)  t=   11.4s  MB=  2.134  AUPRC=0.8113  F1=0.7306
+[async-server] upd   65 (~round  13)  t=   12.2s  MB=  2.306  AUPRC=0.8167  F1=0.7143
+[async-server] upd   70 (~round  14)  t=   13.2s  MB=  2.478  AUPRC=0.8216  F1=0.7328
+[async-server] upd   75 (~round  15)  t=   14.0s  MB=  2.650  AUPRC=0.8216  F1=0.6975
+[async-server] upd   80 (~round  16)  t=   15.1s  MB=  2.822  AUPRC=0.8318  F1=0.7173
+[async-server] upd   85 (~round  17)  t=   15.8s  MB=  2.994  AUPRC=0.8341  F1=0.6911
+[async-server] upd   90 (~round  18)  t=   16.9s  MB=  3.166  AUPRC=0.8402  F1=0.7391
+[async-server] upd   95 (~round  19)  t=   17.6s  MB=  3.338  AUPRC=0.8376  F1=0.7658
+[async-server] upd  100 (~round  20)  t=   18.5s  MB=  3.510  AUPRC=0.8417  F1=0.7713
+[async-server] upd  105 (~round  21)  t=   19.5s  MB=  3.683  AUPRC=0.8472  F1=0.7658
+[async-server] upd  110 (~round  22)  t=   20.2s  MB=  3.855  AUPRC=0.8489  F1=0.7658
+[async-server] upd  115 (~round  23)  t=   21.1s  MB=  4.027  AUPRC=0.8484  F1=0.7692
+[async-server] upd  120 (~round  24)  t=   22.1s  MB=  4.199  AUPRC=0.8500  F1=0.7692
+[async-server] upd  125 (~round  25)  t=   22.9s  MB=  4.371  AUPRC=0.8538  F1=0.7692
+[async-server] upd  130 (~round  26)  t=   23.9s  MB=  4.543  AUPRC=0.8519  F1=0.7589
+[async-server] upd  135 (~round  27)  t=   24.9s  MB=  4.715  AUPRC=0.8487  F1=0.7391
+[async-server] upd  140 (~round  28)  t=   25.8s  MB=  4.887  AUPRC=0.8458  F1=0.7489
+[async-server] upd  145 (~round  29)  t=   26.5s  MB=  5.059  AUPRC=0.8511  F1=0.7359
+[async-server] upd  150 (~round  30)  t=   27.5s  MB=  5.231  AUPRC=0.8488  F1=0.7328
+[async-server] upd  151 (~round  30)  t=   27.6s  MB=  5.248  AUPRC=0.8510  F1=0.7589
+[async-server] participation={0: 48, 1: 43, 2: 28, 3: 21, 4: 11} mean staleness=3.87
+[async-server] wrote results/async_fedasync_iid_E1_s2.json

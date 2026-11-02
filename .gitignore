@@ -1,0 +1,15 @@
+# Course material (slides, reference papers, answer scripts) stays local
+/*.pdf
+/*.docx
+/*.pptx
+
+# Raw dataset (98 MB) is re-downloaded by scripts/prepare_data.py;
+# only the dir0.5 split is kept because the cloud demo uses it
+fedcloud-fl/data/creditcard.csv
+fedcloud-fl/data/parts_iid/
+fedcloud-fl/data/parts_dir0.1/
+fedcloud-fl/data/parts_dir1.0/
+
+venv/
+__pycache__/
+*.pyc

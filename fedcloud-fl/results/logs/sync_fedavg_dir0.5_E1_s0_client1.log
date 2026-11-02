@@ -1,0 +1,44 @@
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[client 1] connect failed (_MultiThreadedRendezvous); retry 1/30
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a04328ee-6064-43be-873c-98f00852b31f
+[client 1] round 1 trained on 628 rows in 0.02s (+0.00s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 61f3d46c-65f6-4b84-a4be-a51980f3e251
+[client 1] round 2 trained on 628 rows in 0.00s (+0.00s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message d448d460-d8ca-441a-99d0-dfb154562a89
+[client 1] round 3 trained on 628 rows in 0.01s (+0.00s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: reconnect message a33d08ea-41b4-46b9-aa8b-dd84d2a19f6b
+[92mINFO [0m:      Disconnect and shut down

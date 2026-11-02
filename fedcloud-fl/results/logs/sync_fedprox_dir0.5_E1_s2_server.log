@@ -1,0 +1,487 @@
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower server, config: num_rounds=30, no round_timeout
+[92mINFO [0m:      Flower ECE: gRPC server running (30 rounds), SSL is disabled
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Using initial global parameters provided by strategy
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[server] round   0  t=    0.0s  MB=  0.000  AUPRC=0.0329  F1=0.0047  ROC-AUC=0.7123
+[92mINFO [0m:      initial parameters (loss, other metrics): 0.8937831622627516, {'loss': 0.8937831622627516, 'accuracy': 0.4459288648572733, 'precision': 0.0023409572617126948, 'recall': 0.7551020408163265, 'f1': 0.004667444574095682, 'auprc': 0.032901071828519944, 'roc_auc': 0.7122570644746362}
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[93mWARNING [0m:   No fit_metrics_aggregation_fn provided
+[server] round   1  t=    2.5s  MB=  0.172  AUPRC=0.5589  F1=0.7273  ROC-AUC=0.8703
+[92mINFO [0m:      fit progress: (1, 0.05808103065126017, {'loss': 0.05808103065126017, 'accuracy': 0.9991573329588147, 'precision': 0.8205128205128205, 'recall': 0.6530612244897959, 'f1': 0.7272727272727273, 'auprc': 0.5588631859786062, 'roc_auc': 0.8702958831957093}, 7.499561460000223)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round   2  t=    5.1s  MB=  0.343  AUPRC=0.6515  F1=0.7845  ROC-AUC=0.9027
+[92mINFO [0m:      fit progress: (2, 0.031817095411471964, {'loss': 0.031817095411471964, 'accuracy': 0.9993153330290369, 'precision': 0.8554216867469879, 'recall': 0.7244897959183674, 'f1': 0.7845303867403315, 'auprc': 0.6514717874583752, 'roc_auc': 0.9026594423644528}, 10.02008215800015)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round   3  t=    7.6s  MB=  0.515  AUPRC=0.6686  F1=0.8083  ROC-AUC=0.9235
+[92mINFO [0m:      fit progress: (3, 0.027564572919702077, {'loss': 0.027564572919702077, 'accuracy': 0.9993504441557529, 'precision': 0.8210526315789474, 'recall': 0.7959183673469388, 'f1': 0.8082901554404145, 'auprc': 0.6686119033487318, 'roc_auc': 0.923520171293053}, 12.540010728000198)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round   4  t=   10.1s  MB=  0.686  AUPRC=0.6753  F1=0.8042  ROC-AUC=0.9499
+[92mINFO [0m:      fit progress: (4, 0.02538928504698468, {'loss': 0.02538928504698468, 'accuracy': 0.9993504441557529, 'precision': 0.8351648351648352, 'recall': 0.7755102040816326, 'f1': 0.8042328042328042, 'auprc': 0.6752904211218853, 'roc_auc': 0.9499177414353474}, 15.067387497000254)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round   5  t=   12.7s  MB=  0.858  AUPRC=0.7111  F1=0.7800  ROC-AUC=0.9651
+[92mINFO [0m:      fit progress: (5, 0.022960215014418386, {'loss': 0.022960215014418386, 'accuracy': 0.9992275552122467, 'precision': 0.7647058823529411, 'recall': 0.7959183673469388, 'f1': 0.78, 'auprc': 0.7111448572303543, 'roc_auc': 0.9651313588885189}, 17.61533788099996)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round   6  t=   15.2s  MB=  1.029  AUPRC=0.7008  F1=0.8108  ROC-AUC=0.9592
+[92mINFO [0m:      fit progress: (6, 0.024685559463146788, {'loss': 0.024685559463146788, 'accuracy': 0.999385555282469, 'precision': 0.8620689655172413, 'recall': 0.7653061224489796, 'f1': 0.8108108108108109, 'auprc': 0.7008003395400524, 'roc_auc': 0.9592141794815844}, 20.14851247500019)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round   7  t=   17.7s  MB=  1.201  AUPRC=0.7190  F1=0.8087  ROC-AUC=0.9623
+[92mINFO [0m:      fit progress: (7, 0.024511036671699096, {'loss': 0.024511036671699096, 'accuracy': 0.999385555282469, 'precision': 0.8705882352941177, 'recall': 0.7551020408163265, 'f1': 0.8087431693989071, 'auprc': 0.7190107526534171, 'roc_auc': 0.9622746502934318}, 22.68100090500002)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round   8  t=   20.3s  MB=  1.372  AUPRC=0.7325  F1=0.8108  ROC-AUC=0.9648
+[92mINFO [0m:      fit progress: (8, 0.023440328346781673, {'loss': 0.023440328346781673, 'accuracy': 0.999385555282469, 'precision': 0.8620689655172413, 'recall': 0.7653061224489796, 'f1': 0.8108108108108109, 'auprc': 0.7324543938232622, 'roc_auc': 0.9647531740608455}, 25.20901951299993)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round   9  t=   22.8s  MB=  1.544  AUPRC=0.7503  F1=0.8021  ROC-AUC=0.9699
+[92mINFO [0m:      fit progress: (9, 0.021072245519147693, {'loss': 0.021072245519147693, 'accuracy': 0.9993328885923949, 'precision': 0.8191489361702128, 'recall': 0.7857142857142857, 'f1': 0.8020833333333334, 'auprc': 0.7502688771403909, 'roc_auc': 0.9698896687262413}, 27.75185251200037)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  10  t=   25.3s  MB=  1.716  AUPRC=0.7499  F1=0.6780  ROC-AUC=0.9720
+[92mINFO [0m:      fit progress: (10, 0.020750981522201194, {'loss': 0.020750981522201194, 'accuracy': 0.9986657771847899, 'precision': 0.5797101449275363, 'recall': 0.8163265306122449, 'f1': 0.6779661016949152, 'auprc': 0.7499426415997218, 'roc_auc': 0.972022667043745}, 30.26385609900035)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 11]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  11  t=   27.8s  MB=  1.887  AUPRC=0.7500  F1=0.7707  ROC-AUC=0.9727
+[92mINFO [0m:      fit progress: (11, 0.020333312953176995, {'loss': 0.020333312953176995, 'accuracy': 0.9991748885221726, 'precision': 0.7383177570093458, 'recall': 0.8061224489795918, 'f1': 0.7707317073170732, 'auprc': 0.7500189578950003, 'roc_auc': 0.9726694842258794}, 32.79007573200033)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 12]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  12  t=   30.4s  MB=  2.059  AUPRC=0.7435  F1=0.7917  ROC-AUC=0.9718
+[92mINFO [0m:      fit progress: (12, 0.021682051979352645, {'loss': 0.021682051979352645, 'accuracy': 0.9992977774656788, 'precision': 0.8085106382978723, 'recall': 0.7755102040816326, 'f1': 0.7916666666666666, 'auprc': 0.7434752504980565, 'roc_auc': 0.9717587900382436}, 35.31371591800007)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 13]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  13  t=   32.9s  MB=  2.230  AUPRC=0.7486  F1=0.7800  ROC-AUC=0.9721
+[92mINFO [0m:      fit progress: (13, 0.021064039438403882, {'loss': 0.021064039438403882, 'accuracy': 0.9992275552122467, 'precision': 0.7647058823529411, 'recall': 0.7959183673469388, 'f1': 0.78, 'auprc': 0.7486206515754363, 'roc_auc': 0.9721063791301552}, 37.84895933600001)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 14]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  14  t=   35.4s  MB=  2.402  AUPRC=0.7581  F1=0.7773  ROC-AUC=0.9736
+[92mINFO [0m:      fit progress: (14, 0.019832498969643068, {'loss': 0.019832498969643068, 'accuracy': 0.9991748885221726, 'precision': 0.7256637168141593, 'recall': 0.8367346938775511, 'f1': 0.7772511848341233, 'auprc': 0.7580531185714839, 'roc_auc': 0.973556850286541}, 40.37152814499996)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 15]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  15  t=   38.0s  MB=  2.573  AUPRC=0.7625  F1=0.7861  ROC-AUC=0.9724
+[92mINFO [0m:      fit progress: (15, 0.020891350576409676, {'loss': 0.020891350576409676, 'accuracy': 0.9992451107756047, 'precision': 0.7669902912621359, 'recall': 0.8061224489795918, 'f1': 0.7860696517412935, 'auprc': 0.7625334804835557, 'roc_auc': 0.9723748320374859}, 42.908401724000214)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 16]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  16  t=   40.5s  MB=  2.745  AUPRC=0.7532  F1=0.7729  ROC-AUC=0.9727
+[92mINFO [0m:      fit progress: (16, 0.020380825020787703, {'loss': 0.020380825020787703, 'accuracy': 0.9991748885221726, 'precision': 0.7339449541284404, 'recall': 0.8163265306122449, 'f1': 0.7729468599033816, 'auprc': 0.7532178425213097, 'roc_auc': 0.9727121926429547}, 45.43133292700031)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 17]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  17  t=   43.0s  MB=  2.917  AUPRC=0.7686  F1=0.7707  ROC-AUC=0.9725
+[92mINFO [0m:      fit progress: (17, 0.020189721864003217, {'loss': 0.020189721864003217, 'accuracy': 0.9991748885221726, 'precision': 0.7383177570093458, 'recall': 0.8061224489795918, 'f1': 0.7707317073170732, 'auprc': 0.7686447140578796, 'roc_auc': 0.9725047517600174}, 47.95524925300015)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 18]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  18  t=   45.6s  MB=  3.088  AUPRC=0.7690  F1=0.7500  ROC-AUC=0.9728
+[92mINFO [0m:      fit progress: (18, 0.01986829265424095, {'loss': 0.01986829265424095, 'accuracy': 0.9990871107053826, 'precision': 0.7090909090909091, 'recall': 0.7959183673469388, 'f1': 0.75, 'auprc': 0.7690199573249376, 'roc_auc': 0.9727556188485524}, 50.51074758200002)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 19]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  19  t=   48.1s  MB=  3.260  AUPRC=0.7733  F1=0.7745  ROC-AUC=0.9725
+[92mINFO [0m:      fit progress: (19, 0.019991077601356294, {'loss': 0.019991077601356294, 'accuracy': 0.9991924440855307, 'precision': 0.7452830188679245, 'recall': 0.8061224489795918, 'f1': 0.7745098039215687, 'auprc': 0.7733139394290566, 'roc_auc': 0.972487883729744}, 53.03763970099999)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 20]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  20  t=   50.6s  MB=  3.431  AUPRC=0.7825  F1=0.7795  ROC-AUC=0.9716
+[92mINFO [0m:      fit progress: (20, 0.02106433279967894, {'loss': 0.02106433279967894, 'accuracy': 0.9992451107756047, 'precision': 0.7835051546391752, 'recall': 0.7755102040816326, 'f1': 0.7794871794871795, 'auprc': 0.7824888588777651, 'roc_auc': 0.9715935192309901}, 55.556812860000264)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 21]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  21  t=   53.1s  MB=  3.603  AUPRC=0.7938  F1=0.7692  ROC-AUC=0.9720
+[92mINFO [0m:      fit progress: (21, 0.020764997154168418, {'loss': 0.020764997154168418, 'accuracy': 0.9992099996488887, 'precision': 0.7731958762886598, 'recall': 0.7653061224489796, 'f1': 0.7692307692307693, 'auprc': 0.793840337710373, 'roc_auc': 0.9719617447429169}, 58.09504226400031)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 22]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  22  t=   55.7s  MB=  3.774  AUPRC=0.7985  F1=0.7835  ROC-AUC=0.9722
+[92mINFO [0m:      fit progress: (22, 0.020321136468386083, {'loss': 0.020321136468386083, 'accuracy': 0.9992626663389628, 'precision': 0.7916666666666666, 'recall': 0.7755102040816326, 'f1': 0.7835051546391752, 'auprc': 0.7985297052338309, 'roc_auc': 0.9721925137528281}, 60.61815823799998)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 23]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  23  t=   58.2s  MB=  3.946  AUPRC=0.7984  F1=0.7723  ROC-AUC=0.9726
+[92mINFO [0m:      fit progress: (23, 0.020103946176753, {'loss': 0.020103946176753, 'accuracy': 0.9991924440855307, 'precision': 0.75, 'recall': 0.7959183673469388, 'f1': 0.7722772277227723, 'auprc': 0.7983657588606679, 'roc_auc': 0.9725971670322602}, 63.14971467000032)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 24]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  24  t=   60.7s  MB=  4.117  AUPRC=0.7947  F1=0.7670  ROC-AUC=0.9723
+[92mINFO [0m:      fit progress: (24, 0.019816255213674406, {'loss': 0.019816255213674406, 'accuracy': 0.9991573329588147, 'precision': 0.7314814814814815, 'recall': 0.8061224489795918, 'f1': 0.7669902912621359, 'auprc': 0.7946735548654849, 'roc_auc': 0.9723265607593627}, 65.68237617900013)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 25]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  25  t=   63.3s  MB=  4.289  AUPRC=0.7957  F1=0.7729  ROC-AUC=0.9736
+[92mINFO [0m:      fit progress: (25, 0.018922558434925595, {'loss': 0.018922558434925595, 'accuracy': 0.9991748885221726, 'precision': 0.7339449541284404, 'recall': 0.8163265306122449, 'f1': 0.7729468599033816, 'auprc': 0.7957195753645676, 'roc_auc': 0.9736282702445074}, 68.21228112000017)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 26]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  26  t=   65.8s  MB=  4.461  AUPRC=0.7996  F1=0.7767  ROC-AUC=0.9742
+[92mINFO [0m:      fit progress: (26, 0.01865506980682683, {'loss': 0.01865506980682683, 'accuracy': 0.9991924440855307, 'precision': 0.7407407407407407, 'recall': 0.8163265306122449, 'f1': 0.7766990291262136, 'auprc': 0.799587943202263, 'roc_auc': 0.9741707389202163}, 70.74390199599975)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 27]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  27  t=   68.3s  MB=  4.632  AUPRC=0.7814  F1=0.7200  ROC-AUC=0.9749
+[92mINFO [0m:      fit progress: (27, 0.018796822438531712, {'loss': 0.018796822438531712, 'accuracy': 0.9988939995084443, 'precision': 0.6377952755905512, 'recall': 0.826530612244898, 'f1': 0.72, 'auprc': 0.7813869781952658, 'roc_auc': 0.97486932659952}, 73.26009520900016)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 28]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  28  t=   70.8s  MB=  4.804  AUPRC=0.7852  F1=0.7843  ROC-AUC=0.9750
+[92mINFO [0m:      fit progress: (28, 0.01912011604915381, {'loss': 0.01912011604915381, 'accuracy': 0.9992275552122467, 'precision': 0.7547169811320755, 'recall': 0.8163265306122449, 'f1': 0.7843137254901961, 'auprc': 0.7852487506439071, 'roc_auc': 0.9750153965638029}, 75.78194869699973)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 29]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  29  t=   73.4s  MB=  4.975  AUPRC=0.7815  F1=0.6694  ROC-AUC=0.9750
+[92mINFO [0m:      fit progress: (29, 0.018828431316984983, {'loss': 0.018828431316984983, 'accuracy': 0.9985779993679997, 'precision': 0.5578231292517006, 'recall': 0.8367346938775511, 'f1': 0.6693877551020408, 'auprc': 0.7814728617783266, 'roc_auc': 0.9749863261286507}, 78.32457074900003)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 30]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round  30  t=   75.9s  MB=  5.147  AUPRC=0.7985  F1=0.7729  ROC-AUC=0.9749
+[92mINFO [0m:      fit progress: (30, 0.019107738657432146, {'loss': 0.019107738657432146, 'accuracy': 0.9991748885221726, 'precision': 0.7339449541284404, 'recall': 0.8163265306122449, 'f1': 0.7729468599033816, 'auprc': 0.798513104487663, 'roc_auc': 0.9748592775602081}, 80.85628387000042)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 30 round(s) in 80.86s
+[92mINFO [0m:      	History (loss, centralized):
+[92mINFO [0m:      		round 0: 0.8937831622627516
+[92mINFO [0m:      		round 1: 0.05808103065126017
+[92mINFO [0m:      		round 2: 0.031817095411471964
+[92mINFO [0m:      		round 3: 0.027564572919702077
+[92mINFO [0m:      		round 4: 0.02538928504698468
+[92mINFO [0m:      		round 5: 0.022960215014418386
+[92mINFO [0m:      		round 6: 0.024685559463146788
+[92mINFO [0m:      		round 7: 0.024511036671699096
+[92mINFO [0m:      		round 8: 0.023440328346781673
+[92mINFO [0m:      		round 9: 0.021072245519147693
+[92mINFO [0m:      		round 10: 0.020750981522201194
+[92mINFO [0m:      		round 11: 0.020333312953176995
+[92mINFO [0m:      		round 12: 0.021682051979352645
+[92mINFO [0m:      		round 13: 0.021064039438403882
+[92mINFO [0m:      		round 14: 0.019832498969643068
+[92mINFO [0m:      		round 15: 0.020891350576409676
+[92mINFO [0m:      		round 16: 0.020380825020787703
+[92mINFO [0m:      		round 17: 0.020189721864003217
+[92mINFO [0m:      		round 18: 0.01986829265424095
+[92mINFO [0m:      		round 19: 0.019991077601356294
+[92mINFO [0m:      		round 20: 0.02106433279967894
+[92mINFO [0m:      		round 21: 0.020764997154168418
+[92mINFO [0m:      		round 22: 0.020321136468386083
+[92mINFO [0m:      		round 23: 0.020103946176753
+[92mINFO [0m:      		round 24: 0.019816255213674406
+[92mINFO [0m:      		round 25: 0.018922558434925595
+[92mINFO [0m:      		round 26: 0.01865506980682683
+[92mINFO [0m:      		round 27: 0.018796822438531712
+[92mINFO [0m:      		round 28: 0.01912011604915381
+[92mINFO [0m:      		round 29: 0.018828431316984983
+[92mINFO [0m:      		round 30: 0.019107738657432146
+[92mINFO [0m:      	History (metrics, centralized):
+[92mINFO [0m:      	{'accuracy': [(0, 0.4459288648572733),
+[92mINFO [0m:      	              (1, 0.9991573329588147),
+[92mINFO [0m:      	              (2, 0.9993153330290369),
+[92mINFO [0m:      	              (3, 0.9993504441557529),
+[92mINFO [0m:      	              (4, 0.9993504441557529),
+[92mINFO [0m:      	              (5, 0.9992275552122467),
+[92mINFO [0m:      	              (6, 0.999385555282469),
+[92mINFO [0m:      	              (7, 0.999385555282469),
+[92mINFO [0m:      	              (8, 0.999385555282469),
+[92mINFO [0m:      	              (9, 0.9993328885923949),
+[92mINFO [0m:      	              (10, 0.9986657771847899),
+[92mINFO [0m:      	              (11, 0.9991748885221726),
+[92mINFO [0m:      	              (12, 0.9992977774656788),
+[92mINFO [0m:      	              (13, 0.9992275552122467),
+[92mINFO [0m:      	              (14, 0.9991748885221726),
+[92mINFO [0m:      	              (15, 0.9992451107756047),
+[92mINFO [0m:      	              (16, 0.9991748885221726),
+[92mINFO [0m:      	              (17, 0.9991748885221726),
+[92mINFO [0m:      	              (18, 0.9990871107053826),
+[92mINFO [0m:      	              (19, 0.9991924440855307),
+[92mINFO [0m:      	              (20, 0.9992451107756047),
+[92mINFO [0m:      	              (21, 0.9992099996488887),
+[92mINFO [0m:      	              (22, 0.9992626663389628),
+[92mINFO [0m:      	              (23, 0.9991924440855307),
+[92mINFO [0m:      	              (24, 0.9991573329588147),
+[92mINFO [0m:      	              (25, 0.9991748885221726),
+[92mINFO [0m:      	              (26, 0.9991924440855307),
+[92mINFO [0m:      	              (27, 0.9988939995084443),
+[92mINFO [0m:      	              (28, 0.9992275552122467),
+[92mINFO [0m:      	              (29, 0.9985779993679997),
+[92mINFO [0m:      	              (30, 0.9991748885221726)],
+[92mINFO [0m:      	 'auprc': [(0, 0.032901071828519944),
+[92mINFO [0m:      	           (1, 0.5588631859786062),
+[92mINFO [0m:      	           (2, 0.6514717874583752),
+[92mINFO [0m:      	           (3, 0.6686119033487318),
+[92mINFO [0m:      	           (4, 0.6752904211218853),
+[92mINFO [0m:      	           (5, 0.7111448572303543),
+[92mINFO [0m:      	           (6, 0.7008003395400524),
+[92mINFO [0m:      	           (7, 0.7190107526534171),
+[92mINFO [0m:      	           (8, 0.7324543938232622),
+[92mINFO [0m:      	           (9, 0.7502688771403909),
+[92mINFO [0m:      	           (10, 0.7499426415997218),
+[92mINFO [0m:      	           (11, 0.7500189578950003),
+[92mINFO [0m:      	           (12, 0.7434752504980565),
+[92mINFO [0m:      	           (13, 0.7486206515754363),
+[92mINFO [0m:      	           (14, 0.7580531185714839),
+[92mINFO [0m:      	           (15, 0.7625334804835557),
+[92mINFO [0m:      	           (16, 0.7532178425213097),
+[92mINFO [0m:      	           (17, 0.7686447140578796),
+[92mINFO [0m:      	           (18, 0.7690199573249376),
+[92mINFO [0m:      	           (19, 0.7733139394290566),
+[92mINFO [0m:      	           (20, 0.7824888588777651),
+[92mINFO [0m:      	           (21, 0.793840337710373),
+[92mINFO [0m:      	           (22, 0.7985297052338309),
+[92mINFO [0m:      	           (23, 0.7983657588606679),
+[92mINFO [0m:      	           (24, 0.7946735548654849),
+[92mINFO [0m:      	           (25, 0.7957195753645676),
+[92mINFO [0m:      	           (26, 0.799587943202263),
+[92mINFO [0m:      	           (27, 0.7813869781952658),
+[92mINFO [0m:      	           (28, 0.7852487506439071),
+[92mINFO [0m:      	           (29, 0.7814728617783266),
+[92mINFO [0m:      	           (30, 0.798513104487663)],
+[92mINFO [0m:      	 'f1': [(0, 0.004667444574095682),
+[92mINFO [0m:      	        (1, 0.7272727272727273),
+[92mINFO [0m:      	        (2, 0.7845303867403315),
+[92mINFO [0m:      	        (3, 0.8082901554404145),
+[92mINFO [0m:      	        (4, 0.8042328042328042),
+[92mINFO [0m:      	        (5, 0.78),
+[92mINFO [0m:      	        (6, 0.8108108108108109),
+[92mINFO [0m:      	        (7, 0.8087431693989071),
+[92mINFO [0m:      	        (8, 0.8108108108108109),
+[92mINFO [0m:      	        (9, 0.8020833333333334),
+[92mINFO [0m:      	        (10, 0.6779661016949152),
+[92mINFO [0m:      	        (11, 0.7707317073170732),
+[92mINFO [0m:      	        (12, 0.7916666666666666),
+[92mINFO [0m:      	        (13, 0.78),
+[92mINFO [0m:      	        (14, 0.7772511848341233),
+[92mINFO [0m:      	        (15, 0.7860696517412935),
+[92mINFO [0m:      	        (16, 0.7729468599033816),
+[92mINFO [0m:      	        (17, 0.7707317073170732),
+[92mINFO [0m:      	        (18, 0.75),
+[92mINFO [0m:      	        (19, 0.7745098039215687),
+[92mINFO [0m:      	        (20, 0.7794871794871795),
+[92mINFO [0m:      	        (21, 0.7692307692307693),
+[92mINFO [0m:      	        (22, 0.7835051546391752),
+[92mINFO [0m:      	        (23, 0.7722772277227723),
+[92mINFO [0m:      	        (24, 0.7669902912621359),
+[92mINFO [0m:      	        (25, 0.7729468599033816),
+[92mINFO [0m:      	        (26, 0.7766990291262136),
+[92mINFO [0m:      	        (27, 0.72),
+[92mINFO [0m:      	        (28, 0.7843137254901961),
+[92mINFO [0m:      	        (29, 0.6693877551020408),
+[92mINFO [0m:      	        (30, 0.7729468599033816)],
+[92mINFO [0m:      	 'loss': [(0, 0.8937831622627516),
+[92mINFO [0m:      	          (1, 0.05808103065126017),
+[92mINFO [0m:      	          (2, 0.031817095411471964),
+[92mINFO [0m:      	          (3, 0.027564572919702077),
+[92mINFO [0m:      	          (4, 0.02538928504698468),
+[92mINFO [0m:      	          (5, 0.022960215014418386),
+[92mINFO [0m:      	          (6, 0.024685559463146788),
+[92mINFO [0m:      	          (7, 0.024511036671699096),
+[92mINFO [0m:      	          (8, 0.023440328346781673),
+[92mINFO [0m:      	          (9, 0.021072245519147693),
+[92mINFO [0m:      	          (10, 0.020750981522201194),
+[92mINFO [0m:      	          (11, 0.020333312953176995),
+[92mINFO [0m:      	          (12, 0.021682051979352645),
+[92mINFO [0m:      	          (13, 0.021064039438403882),
+[92mINFO [0m:      	          (14, 0.019832498969643068),
+[92mINFO [0m:      	          (15, 0.020891350576409676),
+[92mINFO [0m:      	          (16, 0.020380825020787703),
+[92mINFO [0m:      	          (17, 0.020189721864003217),
+[92mINFO [0m:      	          (18, 0.01986829265424095),
+[92mINFO [0m:      	          (19, 0.019991077601356294),
+[92mINFO [0m:      	          (20, 0.02106433279967894),
+[92mINFO [0m:      	          (21, 0.020764997154168418),
+[92mINFO [0m:      	          (22, 0.020321136468386083),
+[92mINFO [0m:      	          (23, 0.020103946176753),
+[92mINFO [0m:      	          (24, 0.019816255213674406),
+[92mINFO [0m:      	          (25, 0.018922558434925595),
+[92mINFO [0m:      	          (26, 0.01865506980682683),
+[92mINFO [0m:      	          (27, 0.018796822438531712),
+[92mINFO [0m:      	          (28, 0.01912011604915381),
+[92mINFO [0m:      	          (29, 0.018828431316984983),
+[92mINFO [0m:      	          (30, 0.019107738657432146)],
+[92mINFO [0m:      	 'precision': [(0, 0.0023409572617126948),
+[92mINFO [0m:      	               (1, 0.8205128205128205),
+[92mINFO [0m:      	               (2, 0.8554216867469879),
+[92mINFO [0m:      	               (3, 0.8210526315789474),
+[92mINFO [0m:      	               (4, 0.8351648351648352),
+[92mINFO [0m:      	               (5, 0.7647058823529411),
+[92mINFO [0m:      	               (6, 0.8620689655172413),
+[92mINFO [0m:      	               (7, 0.8705882352941177),
+[92mINFO [0m:      	               (8, 0.8620689655172413),
+[92mINFO [0m:      	               (9, 0.8191489361702128),
+[92mINFO [0m:      	               (10, 0.5797101449275363),
+[92mINFO [0m:      	               (11, 0.7383177570093458),
+[92mINFO [0m:      	               (12, 0.8085106382978723),
+[92mINFO [0m:      	               (13, 0.7647058823529411),
+[92mINFO [0m:      	               (14, 0.7256637168141593),
+[92mINFO [0m:      	               (15, 0.7669902912621359),
+[92mINFO [0m:      	               (16, 0.7339449541284404),
+[92mINFO [0m:      	               (17, 0.7383177570093458),
+[92mINFO [0m:      	               (18, 0.7090909090909091),
+[92mINFO [0m:      	               (19, 0.7452830188679245),
+[92mINFO [0m:      	               (20, 0.7835051546391752),
+[92mINFO [0m:      	               (21, 0.7731958762886598),
+[92mINFO [0m:      	               (22, 0.7916666666666666),
+[92mINFO [0m:      	               (23, 0.75),
+[92mINFO [0m:      	               (24, 0.7314814814814815),
+[92mINFO [0m:      	               (25, 0.7339449541284404),
+[92mINFO [0m:      	               (26, 0.7407407407407407),
+[92mINFO [0m:      	               (27, 0.6377952755905512),
+[92mINFO [0m:      	               (28, 0.7547169811320755),
+[92mINFO [0m:      	               (29, 0.5578231292517006),
+[92mINFO [0m:      	               (30, 0.7339449541284404)],
+[92mINFO [0m:      	 'recall': [(0, 0.7551020408163265),
+[92mINFO [0m:      	            (1, 0.6530612244897959),
+[92mINFO [0m:      	            (2, 0.7244897959183674),
+[92mINFO [0m:      	            (3, 0.7959183673469388),
+[92mINFO [0m:      	            (4, 0.7755102040816326),
+[92mINFO [0m:      	            (5, 0.7959183673469388),
+[92mINFO [0m:      	            (6, 0.7653061224489796),
+[92mINFO [0m:      	            (7, 0.7551020408163265),
+[92mINFO [0m:      	            (8, 0.7653061224489796),
+[92mINFO [0m:      	            (9, 0.7857142857142857),
+[92mINFO [0m:      	            (10, 0.8163265306122449),
+[92mINFO [0m:      	            (11, 0.8061224489795918),
+[92mINFO [0m:      	            (12, 0.7755102040816326),
+[92mINFO [0m:      	            (13, 0.7959183673469388),
+[92mINFO [0m:      	            (14, 0.8367346938775511),
+[92mINFO [0m:      	            (15, 0.8061224489795918),
+[92mINFO [0m:      	            (16, 0.8163265306122449),
+[92mINFO [0m:      	            (17, 0.8061224489795918),
+[92mINFO [0m:      	            (18, 0.7959183673469388),
+[92mINFO [0m:      	            (19, 0.8061224489795918),
+[92mINFO [0m:      	            (20, 0.7755102040816326),
+[92mINFO [0m:      	            (21, 0.7653061224489796),
+[92mINFO [0m:      	            (22, 0.7755102040816326),
+[92mINFO [0m:      	            (23, 0.7959183673469388),
+[92mINFO [0m:      	            (24, 0.8061224489795918),
+[92mINFO [0m:      	            (25, 0.8163265306122449),
+[92mINFO [0m:      	            (26, 0.8163265306122449),
+[92mINFO [0m:      	            (27, 0.826530612244898),
+[92mINFO [0m:      	            (28, 0.8163265306122449),
+[92mINFO [0m:      	            (29, 0.8367346938775511),
+[92mINFO [0m:      	            (30, 0.8163265306122449)],
+[92mINFO [0m:      	 'roc_auc': [(0, 0.7122570644746362),
+[92mINFO [0m:      	             (1, 0.8702958831957093),
+[92mINFO [0m:      	             (2, 0.9026594423644528),
+[92mINFO [0m:      	             (3, 0.923520171293053),
+[92mINFO [0m:      	             (4, 0.9499177414353474),
+[92mINFO [0m:      	             (5, 0.9651313588885189),
+[92mINFO [0m:      	             (6, 0.9592141794815844),
+[92mINFO [0m:      	             (7, 0.9622746502934318),
+[92mINFO [0m:      	             (8, 0.9647531740608455),
+[92mINFO [0m:      	             (9, 0.9698896687262413),
+[92mINFO [0m:      	             (10, 0.972022667043745),
+[92mINFO [0m:      	             (11, 0.9726694842258794),
+[92mINFO [0m:      	             (12, 0.9717587900382436),
+[92mINFO [0m:      	             (13, 0.9721063791301552),
+[92mINFO [0m:      	             (14, 0.973556850286541),
+[92mINFO [0m:      	             (15, 0.9723748320374859),
+[92mINFO [0m:      	             (16, 0.9727121926429547),
+[92mINFO [0m:      	             (17, 0.9725047517600174),
+[92mINFO [0m:      	             (18, 0.9727556188485524),
+[92mINFO [0m:      	             (19, 0.972487883729744),
+[92mINFO [0m:      	             (20, 0.9715935192309901),
+[92mINFO [0m:      	             (21, 0.9719617447429169),
+[92mINFO [0m:      	             (22, 0.9721925137528281),
+[92mINFO [0m:      	             (23, 0.9725971670322602),
+[92mINFO [0m:      	             (24, 0.9723265607593627),
+[92mINFO [0m:      	             (25, 0.9736282702445074),
+[92mINFO [0m:      	             (26, 0.9741707389202163),
+[92mINFO [0m:      	             (27, 0.97486932659952),
+[92mINFO [0m:      	             (28, 0.9750153965638029),
+[92mINFO [0m:      	             (29, 0.9749863261286507),
+[92mINFO [0m:      	             (30, 0.9748592775602081)]}
+[92mINFO [0m:      
+[server] wrote results/sync_fedprox_dir0.5_E1_s2.json

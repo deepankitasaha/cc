@@ -1,0 +1,10 @@
+# Aggregation server — free-tier VM (GCP e2-micro / Oracle Always Free), ports 8080+8081 open
+python -m fedcloud.sync_server --address 0.0.0.0:8080 --clients 5 --rounds 30 --test server_test.npz
+python -m fedcloud.async_server --port 8081 --clients 5 --rounds 30 --test server_test.npz
+
+# Each client — Colab / Kaggle notebook (deploy/client_node.ipynb), holds ONLY client_k.npz
+python -m fedcloud.sync_client  --server <SERVER_IP>:8080 --cid 0 --data client_0.npz --no-emu
+python -m fedcloud.async_client --server http://<SERVER_IP>:8081 --cid 0 --data client_0.npz --no-emu
+
+# Or the whole 6-node cluster in containers:
+PARTS=parts_dir0.5 MODE=sync docker compose -f deploy/docker-compose.yml up --build

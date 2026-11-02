@@ -1,0 +1,5 @@
+data/
+results/
+paper/
+*.zip
+__pycache__/

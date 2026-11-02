@@ -1,0 +1,23 @@
+[client 2] local data /home/claude/fedcloud-fl/data/parts_iid/client_2.npz: 45569 rows, 77 frauds (0.169% fraud) - this data never leaves this window
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 30b355e3-01a5-4684-bf2e-0312fb923479
+[client 2] round 1 received from server: epochs=1 lr=0.001 prox_mu=0.0 seed=0
+[client 2] round 1 trained on 45569 rows in 0.19s (+0.00s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: reconnect message 9b14909d-7919-4606-966c-2c01f8047123
+[92mINFO [0m:      Disconnect and shut down

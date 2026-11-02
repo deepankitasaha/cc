@@ -1,0 +1,12 @@
+[async-client 4] update 1 from v0 (train 0.18s)
+[async-client 4] update 2 from v11 (train 0.26s)
+[async-client 4] update 3 from v25 (train 0.21s)
+[async-client 4] update 4 from v40 (train 0.20s)
+[async-client 4] update 5 from v54 (train 0.19s)
+[async-client 4] update 6 from v67 (train 0.21s)
+[async-client 4] update 7 from v82 (train 0.21s)
+[async-client 4] update 8 from v95 (train 0.19s)
+[async-client 4] update 9 from v109 (train 0.20s)
+[async-client 4] update 10 from v123 (train 0.18s)
+[async-client 4] update 11 from v136 (train 0.21s)
+[async-client 4] finished after 11 updates

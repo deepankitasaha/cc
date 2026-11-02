@@ -1,0 +1,172 @@
+[central] epoch   1 AUPRC=0.7265 F1=0.7864 ROC-AUC=0.9637
+[central] epoch   2 AUPRC=0.7809 F1=0.7444 ROC-AUC=0.9684
+[central] epoch   3 AUPRC=0.8045 F1=0.6883 ROC-AUC=0.9725
+[central] epoch   4 AUPRC=0.8092 F1=0.6967 ROC-AUC=0.9680
+[central] epoch   5 AUPRC=0.8376 F1=0.7522 ROC-AUC=0.9718
+[central] epoch   6 AUPRC=0.8416 F1=0.7489 ROC-AUC=0.9708
+[central] epoch   7 AUPRC=0.8462 F1=0.7522 ROC-AUC=0.9735
+[central] epoch   8 AUPRC=0.7950 F1=0.7265 ROC-AUC=0.9702
+[central] epoch   9 AUPRC=0.8350 F1=0.7456 ROC-AUC=0.9744
+[central] epoch  10 AUPRC=0.8486 F1=0.7850 ROC-AUC=0.9737
+[central] epoch  11 AUPRC=0.7821 F1=0.7401 ROC-AUC=0.9741
+[central] epoch  12 AUPRC=0.8355 F1=0.7534 ROC-AUC=0.9747
+[central] epoch  13 AUPRC=0.8359 F1=0.7304 ROC-AUC=0.9735
+[central] epoch  14 AUPRC=0.8392 F1=0.7534 ROC-AUC=0.9724
+[central] epoch  15 AUPRC=0.7933 F1=0.7304 ROC-AUC=0.9704
+[central] epoch  16 AUPRC=0.8451 F1=0.7773 ROC-AUC=0.9727
+[central] epoch  17 AUPRC=0.8536 F1=0.6021 ROC-AUC=0.9695
+[central] epoch  18 AUPRC=0.8546 F1=0.7925 ROC-AUC=0.9731
+[central] epoch  19 AUPRC=0.8483 F1=0.7054 ROC-AUC=0.9734
+[central] epoch  20 AUPRC=0.8526 F1=0.7887 ROC-AUC=0.9710
+[central] epoch  21 AUPRC=0.8482 F1=0.8057 ROC-AUC=0.9741
+[central] epoch  22 AUPRC=0.8479 F1=0.7671 ROC-AUC=0.9728
+[central] epoch  23 AUPRC=0.8412 F1=0.7611 ROC-AUC=0.9715
+[central] epoch  24 AUPRC=0.8652 F1=0.7073 ROC-AUC=0.9733
+[central] epoch  25 AUPRC=0.8352 F1=0.7981 ROC-AUC=0.9710
+[central] epoch  26 AUPRC=0.7958 F1=0.7558 ROC-AUC=0.9724
+[central] epoch  27 AUPRC=0.8459 F1=0.7685 ROC-AUC=0.9723
+[central] epoch  28 AUPRC=0.8117 F1=0.7778 ROC-AUC=0.9708
+[central] epoch  29 AUPRC=0.8268 F1=0.7960 ROC-AUC=0.9710
+[central] epoch  30 AUPRC=0.8307 F1=0.7867 ROC-AUC=0.9700
+-> results/centralized_s0.json
+=== sync_fedavg_iid_E1_s0 (port 19663)
+=== sync_fedavg_iid_E1_s0 done rc=0 in 83.7s -> results/sync_fedavg_iid_E1_s0.json
+=== async_fedasync_iid_E1_s0 (port 19888)
+=== async_fedasync_iid_E1_s0 done rc=0 in 36.0s -> results/async_fedasync_iid_E1_s0.json
+=== sync_fedavg_dir1.0_E1_s0 (port 18367)
+=== sync_fedavg_dir1.0_E1_s0 done rc=0 in 84.5s -> results/sync_fedavg_dir1.0_E1_s0.json
+=== async_fedasync_dir1.0_E1_s0 (port 18894)
+=== async_fedasync_dir1.0_E1_s0 done rc=0 in 36.2s -> results/async_fedasync_dir1.0_E1_s0.json
+=== sync_fedavg_dir0.5_E1_s0 (port 18987)
+=== sync_fedavg_dir0.5_E1_s0 done rc=0 in 83.8s -> results/sync_fedavg_dir0.5_E1_s0.json
+=== async_fedasync_dir0.5_E1_s0 (port 19034)
+=== async_fedasync_dir0.5_E1_s0 done rc=0 in 35.7s -> results/async_fedasync_dir0.5_E1_s0.json
+=== sync_fedavg_dir0.1_E1_s0 (port 18664)
+=== sync_fedavg_dir0.1_E1_s0 done rc=0 in 83.7s -> results/sync_fedavg_dir0.1_E1_s0.json
+=== async_fedasync_dir0.1_E1_s0 (port 19481)
+=== async_fedasync_dir0.1_E1_s0 done rc=0 in 35.9s -> results/async_fedasync_dir0.1_E1_s0.json
+=== sync_fedprox_dir0.5_E1_s0 (port 19136)
+=== sync_fedprox_dir0.5_E1_s0 done rc=0 in 84.1s -> results/sync_fedprox_dir0.5_E1_s0.json
+=== sync_fedprox_dir0.1_E1_s0 (port 19267)
+=== sync_fedprox_dir0.1_E1_s0 done rc=0 in 84.2s -> results/sync_fedprox_dir0.1_E1_s0.json
+=== async_fedasync_dir0.1_E1_s0_po4 (port 19845)
+=== async_fedasync_dir0.1_E1_s0_po4 done rc=0 in 35.8s -> results/async_fedasync_dir0.1_E1_s0_po4.json
+=== sync_fedavg_dir0.5_E2_s0 (port 19861)
+=== sync_fedavg_dir0.5_E2_s0 done rc=0 in 144.8s -> results/sync_fedavg_dir0.5_E2_s0.json
+=== sync_fedavg_dir0.5_E5_s0 (port 18796)
+=== sync_fedavg_dir0.5_E5_s0 done rc=0 in 324.3s -> results/sync_fedavg_dir0.5_E5_s0.json
+[central] epoch   1 AUPRC=0.7006 F1=0.6747 ROC-AUC=0.9755
+[central] epoch   2 AUPRC=0.7647 F1=0.7336 ROC-AUC=0.9761
+[central] epoch   3 AUPRC=0.8050 F1=0.7319 ROC-AUC=0.9783
+[central] epoch   4 AUPRC=0.8074 F1=0.7391 ROC-AUC=0.9774
+[central] epoch   5 AUPRC=0.8415 F1=0.7580 ROC-AUC=0.9710
+[central] epoch   6 AUPRC=0.7990 F1=0.6800 ROC-AUC=0.9723
+[central] epoch   7 AUPRC=0.8342 F1=0.7434 ROC-AUC=0.9749
+[central] epoch   8 AUPRC=0.7649 F1=0.6773 ROC-AUC=0.9742
+[central] epoch   9 AUPRC=0.7555 F1=0.7359 ROC-AUC=0.9745
+[central] epoch  10 AUPRC=0.7998 F1=0.7354 ROC-AUC=0.9733
+[central] epoch  11 AUPRC=0.8382 F1=0.6773 ROC-AUC=0.9743
+[central] epoch  12 AUPRC=0.8393 F1=0.7273 ROC-AUC=0.9745
+[central] epoch  13 AUPRC=0.8425 F1=0.6967 ROC-AUC=0.9735
+[central] epoch  14 AUPRC=0.8390 F1=0.7257 ROC-AUC=0.9738
+[central] epoch  15 AUPRC=0.8115 F1=0.7783 ROC-AUC=0.9729
+[central] epoch  16 AUPRC=0.8434 F1=0.7336 ROC-AUC=0.9747
+[central] epoch  17 AUPRC=0.8184 F1=0.7547 ROC-AUC=0.9735
+[central] epoch  18 AUPRC=0.8496 F1=0.7757 ROC-AUC=0.9739
+[central] epoch  19 AUPRC=0.7932 F1=0.7257 ROC-AUC=0.9731
+[central] epoch  20 AUPRC=0.8345 F1=0.6996 ROC-AUC=0.9740
+[central] epoch  21 AUPRC=0.8185 F1=0.6667 ROC-AUC=0.9757
+[central] epoch  22 AUPRC=0.7964 F1=0.7619 ROC-AUC=0.9735
+[central] epoch  23 AUPRC=0.7901 F1=0.6078 ROC-AUC=0.9760
+[central] epoch  24 AUPRC=0.7891 F1=0.7175 ROC-AUC=0.9743
+[central] epoch  25 AUPRC=0.7380 F1=0.6435 ROC-AUC=0.9710
+[central] epoch  26 AUPRC=0.8180 F1=0.6983 ROC-AUC=0.9713
+[central] epoch  27 AUPRC=0.7812 F1=0.7714 ROC-AUC=0.9684
+[central] epoch  28 AUPRC=0.7722 F1=0.6946 ROC-AUC=0.9708
+[central] epoch  29 AUPRC=0.8295 F1=0.7217 ROC-AUC=0.9730
+[central] epoch  30 AUPRC=0.8221 F1=0.6772 ROC-AUC=0.9684
+-> results/centralized_s1.json
+=== sync_fedavg_iid_E1_s1 (port 19033)
+=== sync_fedavg_iid_E1_s1 done rc=0 in 83.7s -> results/sync_fedavg_iid_E1_s1.json
+=== async_fedasync_iid_E1_s1 (port 19190)
+=== async_fedasync_iid_E1_s1 done rc=0 in 36.0s -> results/async_fedasync_iid_E1_s1.json
+=== sync_fedavg_dir1.0_E1_s1 (port 19881)
+=== sync_fedavg_dir1.0_E1_s1 done rc=0 in 84.0s -> results/sync_fedavg_dir1.0_E1_s1.json
+=== async_fedasync_dir1.0_E1_s1 (port 18536)
+=== async_fedasync_dir1.0_E1_s1 done rc=0 in 36.0s -> results/async_fedasync_dir1.0_E1_s1.json
+=== sync_fedavg_dir0.5_E1_s1 (port 19261)
+=== sync_fedavg_dir0.5_E1_s1 done rc=0 in 83.5s -> results/sync_fedavg_dir0.5_E1_s1.json
+=== async_fedasync_dir0.5_E1_s1 (port 19356)
+=== async_fedasync_dir0.5_E1_s1 done rc=0 in 35.5s -> results/async_fedasync_dir0.5_E1_s1.json
+=== sync_fedavg_dir0.1_E1_s1 (port 19518)
+=== sync_fedavg_dir0.1_E1_s1 done rc=0 in 83.4s -> results/sync_fedavg_dir0.1_E1_s1.json
+=== async_fedasync_dir0.1_E1_s1 (port 18287)
+=== async_fedasync_dir0.1_E1_s1 done rc=0 in 36.0s -> results/async_fedasync_dir0.1_E1_s1.json
+=== sync_fedprox_dir0.5_E1_s1 (port 18278)
+=== sync_fedprox_dir0.5_E1_s1 done rc=0 in 84.1s -> results/sync_fedprox_dir0.5_E1_s1.json
+=== sync_fedprox_dir0.1_E1_s1 (port 19365)
+=== sync_fedprox_dir0.1_E1_s1 done rc=0 in 84.0s -> results/sync_fedprox_dir0.1_E1_s1.json
+=== async_fedasync_dir0.1_E1_s1_po4 (port 19141)
+=== async_fedasync_dir0.1_E1_s1_po4 done rc=0 in 35.8s -> results/async_fedasync_dir0.1_E1_s1_po4.json
+=== sync_fedavg_dir0.5_E2_s1 (port 19907)
+=== sync_fedavg_dir0.5_E2_s1 done rc=0 in 143.8s -> results/sync_fedavg_dir0.5_E2_s1.json
+=== sync_fedavg_dir0.5_E5_s1 (port 19786)
+=== sync_fedavg_dir0.5_E5_s1 done rc=0 in 323.7s -> results/sync_fedavg_dir0.5_E5_s1.json
+[central] epoch   1 AUPRC=0.7349 F1=0.7489 ROC-AUC=0.9744
+[central] epoch   2 AUPRC=0.8113 F1=0.7961 ROC-AUC=0.9746
+[central] epoch   3 AUPRC=0.8328 F1=0.7589 ROC-AUC=0.9741
+[central] epoch   4 AUPRC=0.8331 F1=0.8039 ROC-AUC=0.9752
+[central] epoch   5 AUPRC=0.8466 F1=0.7568 ROC-AUC=0.9759
+[central] epoch   6 AUPRC=0.8323 F1=0.6391 ROC-AUC=0.9732
+[central] epoch   7 AUPRC=0.8548 F1=0.8155 ROC-AUC=0.9756
+[central] epoch   8 AUPRC=0.8265 F1=0.6967 ROC-AUC=0.9746
+[central] epoch   9 AUPRC=0.8531 F1=0.7000 ROC-AUC=0.9756
+[central] epoch  10 AUPRC=0.8464 F1=0.8019 ROC-AUC=0.9716
+[central] epoch  11 AUPRC=0.8446 F1=0.7867 ROC-AUC=0.9747
+[central] epoch  12 AUPRC=0.8597 F1=0.7556 ROC-AUC=0.9750
+[central] epoch  13 AUPRC=0.8569 F1=0.7650 ROC-AUC=0.9740
+[central] epoch  14 AUPRC=0.8588 F1=0.7850 ROC-AUC=0.9745
+[central] epoch  15 AUPRC=0.8463 F1=0.7773 ROC-AUC=0.9700
+[central] epoch  16 AUPRC=0.8577 F1=0.7943 ROC-AUC=0.9737
+[central] epoch  17 AUPRC=0.8438 F1=0.8098 ROC-AUC=0.9721
+[central] epoch  18 AUPRC=0.8524 F1=0.7905 ROC-AUC=0.9704
+[central] epoch  19 AUPRC=0.8492 F1=0.8000 ROC-AUC=0.9704
+[central] epoch  20 AUPRC=0.8210 F1=0.7306 ROC-AUC=0.9732
+[central] epoch  21 AUPRC=0.8599 F1=0.8060 ROC-AUC=0.9716
+[central] epoch  22 AUPRC=0.8482 F1=0.7885 ROC-AUC=0.9719
+[central] epoch  23 AUPRC=0.8390 F1=0.8300 ROC-AUC=0.9724
+[central] epoch  24 AUPRC=0.8406 F1=0.8000 ROC-AUC=0.9717
+[central] epoch  25 AUPRC=0.8557 F1=0.7981 ROC-AUC=0.9705
+[central] epoch  26 AUPRC=0.8532 F1=0.8137 ROC-AUC=0.9708
+[central] epoch  27 AUPRC=0.8564 F1=0.8098 ROC-AUC=0.9689
+[central] epoch  28 AUPRC=0.8701 F1=0.8019 ROC-AUC=0.9725
+[central] epoch  29 AUPRC=0.8572 F1=0.7961 ROC-AUC=0.9688
+[central] epoch  30 AUPRC=0.8428 F1=0.7940 ROC-AUC=0.9696
+-> results/centralized_s2.json
+=== sync_fedavg_iid_E1_s2 (port 18467)
+=== sync_fedavg_iid_E1_s2 done rc=0 in 84.7s -> results/sync_fedavg_iid_E1_s2.json
+=== async_fedasync_iid_E1_s2 (port 18924)
+=== async_fedasync_iid_E1_s2 done rc=0 in 36.4s -> results/async_fedasync_iid_E1_s2.json
+=== sync_fedavg_dir1.0_E1_s2 (port 18531)
+=== sync_fedavg_dir1.0_E1_s2 done rc=0 in 83.6s -> results/sync_fedavg_dir1.0_E1_s2.json
+=== async_fedasync_dir1.0_E1_s2 (port 19346)
+=== async_fedasync_dir1.0_E1_s2 done rc=0 in 35.8s -> results/async_fedasync_dir1.0_E1_s2.json
+=== sync_fedavg_dir0.5_E1_s2 (port 19447)
+=== sync_fedavg_dir0.5_E1_s2 done rc=0 in 83.7s -> results/sync_fedavg_dir0.5_E1_s2.json
+=== async_fedasync_dir0.5_E1_s2 (port 18534)
+=== async_fedasync_dir0.5_E1_s2 done rc=0 in 36.0s -> results/async_fedasync_dir0.5_E1_s2.json
+=== sync_fedavg_dir0.1_E1_s2 (port 18468)
+=== sync_fedavg_dir0.1_E1_s2 done rc=0 in 83.7s -> results/sync_fedavg_dir0.1_E1_s2.json
+=== async_fedasync_dir0.1_E1_s2 (port 18757)
+=== async_fedasync_dir0.1_E1_s2 done rc=0 in 35.8s -> results/async_fedasync_dir0.1_E1_s2.json
+=== sync_fedprox_dir0.5_E1_s2 (port 18604)
+=== sync_fedprox_dir0.5_E1_s2 done rc=0 in 84.1s -> results/sync_fedprox_dir0.5_E1_s2.json
+=== sync_fedprox_dir0.1_E1_s2 (port 18015)
+=== sync_fedprox_dir0.1_E1_s2 done rc=0 in 84.0s -> results/sync_fedprox_dir0.1_E1_s2.json
+=== async_fedasync_dir0.1_E1_s2_po4 (port 18597)
+=== async_fedasync_dir0.1_E1_s2_po4 done rc=0 in 35.9s -> results/async_fedasync_dir0.1_E1_s2_po4.json
+=== sync_fedavg_dir0.5_E2_s2 (port 19417)
+=== sync_fedavg_dir0.5_E2_s2 done rc=0 in 144.0s -> results/sync_fedavg_dir0.5_E2_s2.json
+=== sync_fedavg_dir0.5_E5_s2 (port 19568)
+=== sync_fedavg_dir0.5_E5_s2 done rc=0 in 324.6s -> results/sync_fedavg_dir0.5_E5_s2.json
+ALL_DONE

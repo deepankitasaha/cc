@@ -1,0 +1,82 @@
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      Starting Flower server, config: num_rounds=3, no round_timeout
+[92mINFO [0m:      Flower ECE: gRPC server running (3 rounds), SSL is disabled
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Using initial global parameters provided by strategy
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[server] round   0  t=    0.0s  MB=  0.000  AUPRC=0.0039  F1=0.0020  ROC-AUC=0.3616
+[92mINFO [0m:      initial parameters (loss, other metrics): 1.6138406846867344, {'loss': 1.6138406846867344, 'accuracy': 0.15856184824971034, 'precision': 0.00100150225338007, 'recall': 0.4897959183673469, 'f1': 0.0019989172531545414, 'auprc': 0.0038930252848599074, 'roc_auc': 0.361599606077659}
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[93mWARNING [0m:   No fit_metrics_aggregation_fn provided
+[server] round   1  t=    0.6s  MB=  0.172  AUPRC=0.6092  F1=0.7419  ROC-AUC=0.8622
+[92mINFO [0m:      fit progress: (1, 0.03718177406213474, {'loss': 0.03718177406213474, 'accuracy': 0.9991573329588147, 'precision': 0.7840909090909091, 'recall': 0.7040816326530612, 'f1': 0.7419354838709677, 'auprc': 0.6091517813801105, 'roc_auc': 0.8622127769228118}, 1.6848834190000161)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round   2  t=    1.0s  MB=  0.343  AUPRC=0.7030  F1=0.7938  ROC-AUC=0.9524
+[92mINFO [0m:      fit progress: (2, 0.024438340097838813, {'loss': 0.024438340097838813, 'accuracy': 0.9992977774656788, 'precision': 0.8020833333333334, 'recall': 0.7857142857142857, 'f1': 0.7938144329896907, 'auprc': 0.7029952823505111, 'roc_auc': 0.952386844228406}, 2.121867132000034)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[server] round   3  t=    1.6s  MB=  0.515  AUPRC=0.7475  F1=0.7938  ROC-AUC=0.9529
+[92mINFO [0m:      fit progress: (3, 0.0248944472267878, {'loss': 0.0248944472267878, 'accuracy': 0.9992977774656788, 'precision': 0.8020833333333334, 'recall': 0.7857142857142857, 'f1': 0.7938144329896907, 'auprc': 0.7475442653973505, 'roc_auc': 0.9529347860415972}, 2.77040828600002)
+[92mINFO [0m:      configure_evaluate: no clients selected, skipping evaluation
+[92mINFO [0m:      
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 3 round(s) in 2.77s
+[92mINFO [0m:      	History (loss, centralized):
+[92mINFO [0m:      		round 0: 1.6138406846867344
+[92mINFO [0m:      		round 1: 0.03718177406213474
+[92mINFO [0m:      		round 2: 0.024438340097838813
+[92mINFO [0m:      		round 3: 0.0248944472267878
+[92mINFO [0m:      	History (metrics, centralized):
+[92mINFO [0m:      	{'accuracy': [(0, 0.15856184824971034),
+[92mINFO [0m:      	              (1, 0.9991573329588147),
+[92mINFO [0m:      	              (2, 0.9992977774656788),
+[92mINFO [0m:      	              (3, 0.9992977774656788)],
+[92mINFO [0m:      	 'auprc': [(0, 0.0038930252848599074),
+[92mINFO [0m:      	           (1, 0.6091517813801105),
+[92mINFO [0m:      	           (2, 0.7029952823505111),
+[92mINFO [0m:      	           (3, 0.7475442653973505)],
+[92mINFO [0m:      	 'f1': [(0, 0.0019989172531545414),
+[92mINFO [0m:      	        (1, 0.7419354838709677),
+[92mINFO [0m:      	        (2, 0.7938144329896907),
+[92mINFO [0m:      	        (3, 0.7938144329896907)],
+[92mINFO [0m:      	 'loss': [(0, 1.6138406846867344),
+[92mINFO [0m:      	          (1, 0.03718177406213474),
+[92mINFO [0m:      	          (2, 0.024438340097838813),
+[92mINFO [0m:      	          (3, 0.0248944472267878)],
+[92mINFO [0m:      	 'precision': [(0, 0.00100150225338007),
+[92mINFO [0m:      	               (1, 0.7840909090909091),
+[92mINFO [0m:      	               (2, 0.8020833333333334),
+[92mINFO [0m:      	               (3, 0.8020833333333334)],
+[92mINFO [0m:      	 'recall': [(0, 0.4897959183673469),
+[92mINFO [0m:      	            (1, 0.7040816326530612),
+[92mINFO [0m:      	            (2, 0.7857142857142857),
+[92mINFO [0m:      	            (3, 0.7857142857142857)],
+[92mINFO [0m:      	 'roc_auc': [(0, 0.361599606077659),
+[92mINFO [0m:      	             (1, 0.8622127769228118),
+[92mINFO [0m:      	             (2, 0.952386844228406),
+[92mINFO [0m:      	             (3, 0.9529347860415972)]}
+[92mINFO [0m:      
+[server] wrote /tmp/pp.json

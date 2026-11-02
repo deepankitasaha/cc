@@ -1,0 +1,18 @@
+\begin{tabular}{llcccc}
+\toprule
+Data & Method & Rounds$\to$T & Time$\to$T (s) & MB$\to$T & MB/round \\
+\midrule
+IID & FedAvg & 3.7$\pm$0.5 & 9.3$\pm$1.2 & 0.63$\pm$0.08 & 0.172 \\
+IID & FedAsync & 4.3$\pm$0.5 & 4.5$\pm$0.5 & 0.81$\pm$0.08 & 0.175 \\
+\midrule
+Dir($\alpha{=}1.0$) & FedAvg & 3.3$\pm$0.9 & 8.4$\pm$2.4 & 0.57$\pm$0.16 & 0.172 \\
+Dir($\alpha{=}1.0$) & FedAsync & 4.7$\pm$0.9 & 4.8$\pm$0.8 & 0.87$\pm$0.16 & 0.175 \\
+\midrule
+Dir($\alpha{=}0.5$) & FedAvg & 2.3$\pm$0.5 & 5.9$\pm$1.2 & 0.40$\pm$0.08 & 0.172 \\
+Dir($\alpha{=}0.5$) & FedAsync & 11.0$\pm$3.0$^{2/3}$ & 10.5$\pm$2.8$^{2/3}$ & 1.96$\pm$0.52$^{2/3}$ & 0.409 \\
+\midrule
+Dir($\alpha{=}0.1$) & FedAvg & -- & -- & -- & 0.172 \\
+Dir($\alpha{=}0.1$) & FedAsync & -- & -- & -- & 0.175 \\
+Dir($\alpha{=}0.1$) & FedAsync$^\dagger$ & -- & -- & -- & 0.175 \\
+\bottomrule
+\end{tabular}

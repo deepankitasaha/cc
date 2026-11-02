@@ -1,0 +1,62 @@
+# Containerised FL cluster: 1 aggregation server + 5 client nodes, each with its own data volume.
+#   1) python scripts/prepare_data.py --scheme dir0.5        (creates data/parts_dir0.5/)
+#   2) PARTS=parts_dir0.5 MODE=sync  docker compose -f deploy/docker-compose.yml up --build
+#      PARTS=parts_dir0.5 MODE=async docker compose -f deploy/docker-compose.yml up --build
+# Results land in ./results/. Each client container mounts ONLY its own partition file.
+
+x-client: &client
+  build:
+    context: ..
+    dockerfile: deploy/Dockerfile
+  depends_on:
+    - server
+  command:
+    - sh
+    - -c
+    - >-
+      if [ "$$MODE" = async ];
+      then python -m fedcloud.async_client --server http://server:8081 --cid $$CID --data /data/client.npz;
+      else python -m fedcloud.sync_client --server server:8080 --cid $$CID --data /data/client.npz; fi
+
+services:
+  server:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    environment:
+      MODE: "${MODE:-sync}"
+      ROUNDS: "${ROUNDS:-30}"
+    volumes:
+      - "../data/${PARTS:-parts_iid}/server_test.npz:/data/server_test.npz:ro"
+      - "../results:/results"
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    command:
+      - sh
+      - -c
+      - >-
+        if [ "$$MODE" = async ];
+        then python -m fedcloud.async_server --port 8081 --clients 5 --rounds $$ROUNDS --test /data/server_test.npz --out /results/docker_async.json;
+        else python -m fedcloud.sync_server --address 0.0.0.0:8080 --clients 5 --rounds $$ROUNDS --test /data/server_test.npz --out /results/docker_sync.json; fi
+
+  client0:
+    <<: *client
+    environment: {MODE: "${MODE:-sync}", CID: "0"}
+    volumes: ["../data/${PARTS:-parts_iid}/client_0.npz:/data/client.npz:ro"]
+  client1:
+    <<: *client
+    environment: {MODE: "${MODE:-sync}", CID: "1"}
+    volumes: ["../data/${PARTS:-parts_iid}/client_1.npz:/data/client.npz:ro"]
+  client2:
+    <<: *client
+    environment: {MODE: "${MODE:-sync}", CID: "2"}
+    volumes: ["../data/${PARTS:-parts_iid}/client_2.npz:/data/client.npz:ro"]
+  client3:
+    <<: *client
+    environment: {MODE: "${MODE:-sync}", CID: "3"}
+    volumes: ["../data/${PARTS:-parts_iid}/client_3.npz:/data/client.npz:ro"]
+  client4:
+    <<: *client
+    environment: {MODE: "${MODE:-sync}", CID: "4"}
+    volumes: ["../data/${PARTS:-parts_iid}/client_4.npz:/data/client.npz:ro"]

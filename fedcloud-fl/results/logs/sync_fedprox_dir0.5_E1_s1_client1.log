@@ -1,0 +1,137 @@
+[93mWARNING [0m:   DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message e451c261-0873-4b27-9191-685aa41c3e4b
+[client 1] round 1 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 703a78ef-e48f-4659-bd3e-7911c4166eaa
+[client 1] round 2 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 715b7622-319c-4a7b-a925-90e9422573db
+[client 1] round 3 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message d5d3110a-2179-4907-9f55-5fdc710a8a5b
+[client 1] round 4 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 9c433e01-70e8-4b69-8fab-c412c8e2a6cd
+[client 1] round 5 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message c8dca7d4-c633-4899-8e42-3889484e9e7b
+[client 1] round 6 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message dce93a68-5f24-4679-9dd7-9ea56a1d600c
+[client 1] round 7 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 5baf9a58-3748-4dad-92ef-eeec5ab76536
+[client 1] round 8 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 776312d7-27cc-4d63-87c3-2240b45efa26
+[client 1] round 9 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 442d4e50-bfa5-4c81-b547-bc46542ef4e3
+[client 1] round 10 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 03ef60d0-f63a-4529-bc2c-04c2c87b54e7
+[client 1] round 11 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message de473cbc-ce9a-4936-a205-54f2f8f48ed7
+[client 1] round 12 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message e053671a-2b2a-44dc-8c58-1f96a70581e6
+[client 1] round 13 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message bdf07912-fb1c-4c4d-9925-4a5d2e0c00fa
+[client 1] round 14 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message ac12b86d-32b2-4a4f-8719-094ad6af38c9
+[client 1] round 15 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message f28a3d15-ac7f-4598-a212-6b5bceefb5f6
+[client 1] round 16 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message e37314fe-376e-41c2-bf55-6d6c9e7651bb
+[client 1] round 17 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 847d5366-891f-45f8-8511-c0c971e84cb2
+[client 1] round 18 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 0eddc27f-8f4b-4565-a279-56ec2e6dcbeb
+[client 1] round 19 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message ec647c97-faa6-4943-81ba-0712858024bd
+[client 1] round 20 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 39d2127d-72b8-460c-a694-eb3efc597e6c
+[client 1] round 21 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 67dc61ba-862a-4f04-911c-26248b0c39c0
+[client 1] round 22 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message a4ea3db1-369a-4684-aa94-c1ef362672b9
+[client 1] round 23 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message b736ce4d-bc16-4481-9b34-2e6ef61cd60f
+[client 1] round 24 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message b2983df0-219a-43ab-93c4-dc6dfb54c086
+[client 1] round 25 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message dc63ddf1-bc2d-4427-af44-70899493ac9c
+[client 1] round 26 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message fc102c25-de30-4e29-a6fb-f788f4c30b30
+[client 1] round 27 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message ef31af1b-2808-4ee8-bbc3-f6c0f716999d
+[client 1] round 28 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message 8d6d8100-b445-4ef7-8dcc-dc1b4b4630c6
+[client 1] round 29 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: train message ce687064-dd10-42ea-b6b2-a37ff66c6999
+[client 1] round 30 trained on 628 rows in 0.00s (+0.60s emulated)
+[92mINFO [0m:      Sent reply
+[92mINFO [0m:      
+[92mINFO [0m:      Received: reconnect message 308f3812-e366-4f08-aff8-bc1992eb5076
+[92mINFO [0m:      Disconnect and shut down
